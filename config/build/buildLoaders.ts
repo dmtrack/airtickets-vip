@@ -8,7 +8,7 @@ export const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
         test: /\.s[ac]ss$/i,
         use: [
             // Creates `style` nodes from JS strings
-            options.isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+            isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
             {
                 loader: 'css-loader',
                 options: {

@@ -1,9 +1,8 @@
 @import 'reset.scss';
+@import './variables/global.scss';
 
 .app {
-    font: var(--font-m);
-
-    background: var(--background-color);
-    color: var(--primary-color);
-    min-height: 100vh;
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
 }

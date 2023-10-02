@@ -1,15 +1,13 @@
-:root {
-    --font-family-main: Consolas, 'Times New Roman';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
 
-    --font-size-m: 16px;
-    --font-line-m: 24px;
-    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+$fontFamily: 'Roboto';
+$fontSize: 14px;
+$mainColor: #232323;
 
-    --font-size-l: 24px;
-    --font-line-l: 32px;
-    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+$minWidth: 320;
+$maxWidth: 1920;
 
-    // dimenssions
+$maxWidthContainer: 1010;
+$containerPadding: 30;
 
-    --navbar-height: 50px;
-}
+$containerWidth: $maxWidthContainer + $containerPadding;
