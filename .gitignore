@@ -3,9 +3,11 @@
 .idea
 .vscode
 # dependencies
-
+/node-modules
 /.pnp
 .pnp.js
+
+
 
 # testing
 /coverage
@@ -31,6 +33,5 @@
 # typescript
 *.tsbuildinfo
 
-node-modules
 
 
