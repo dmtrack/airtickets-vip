@@ -2,7 +2,7 @@
 
 This test-task for the company
 
-[deploy]()
+[deploy](https://airtickets-vip.vercel.app)
 
 ## Preview
 
