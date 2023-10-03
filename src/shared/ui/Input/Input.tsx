@@ -1,4 +1,4 @@
-import './input.scss';
+import '@/shared/ui/Input/Input.scss';
 
 import { useCallback, useState } from 'react';
 import clsx from 'clsx';

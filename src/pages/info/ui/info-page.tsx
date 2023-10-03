@@ -1,10 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 
 import { useAppDispatch } from '@/entities/tickets/lib/hooks';
-import { clearDates } from '@/entities/tickets/lib/ticketSlice';
 import { FlightType, serverTypes } from '@/entities/tickets/types/types';
 import { TicketItem } from '@/entities/tickets/ui';
-import { S7CompanyIcon } from '@/shared/assets/icons/s7component';
+import { S7CompanyIcon } from '@/shared/assets/icons/S7component';
 
 const data: serverTypes = {
     company: 'S7 Airlines',
