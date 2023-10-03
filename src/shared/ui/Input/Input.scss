@@ -1,0 +1,148 @@
+.input {
+    font-weight: 700;
+    outline: none;
+    color: #5c5c5c;
+    background-color: #fff !important;
+    appearance: none;
+    background-image: none !important;
+    width: 100%;
+
+    &::placeholder {
+        color: #b7bac1;
+    }
+
+    &__container {
+        position: relative;
+        min-height: 40px;
+        background: #ffffff;
+        border-radius: 10px;
+        transition: border-color 0.3s ease 0s;
+        padding: 0 12px;
+        border: 1px solid #fff;
+        width: 208px;
+        display: flex;
+        align-items: center;
+
+        svg {
+            flex-shrink: 0;
+        }
+    }
+
+    &__container--focused {
+        border-color: #b7bac1;
+
+        label {
+            color: #b7bac1;
+        }
+    }
+
+    &__container--selected {
+        svg {
+            g {
+                path {
+                    fill: #5c87db;
+                }
+            }
+        }
+    }
+
+    &__label {
+        position: absolute;
+        font-size: 11px;
+        color: #ffffff;
+        top: -13px;
+        left: 0;
+        text-transform: capitalize;
+        transition: color 0.3s;
+    }
+
+    &__list {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        min-height: 50px;
+        max-height: 150px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: #fff;
+        border-radius: 10px 0px 0px 10px;
+        z-index: 2;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease 0s;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #5c87db;
+            border: 0px none #ffffff;
+            border-radius: 55px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #fff;
+            border: 0px none #c32c2c;
+            border-radius: 37px;
+        }
+
+        &::-webkit-scrollbar-track:active {
+            background: #ccc;
+        }
+
+        &.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        li {
+            color: #232323;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease 0s;
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+}
+
+.react-datepicker-ignore-onclickoutside {
+    outline: none;
+}
+
+.react-datepicker__input-container {
+    max-width: 100px;
+    margin-left: 6px;
+
+    input {
+        width: 100%;
+
+        &::placeholder {
+            color: #b7bac1;
+        }
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.react-datepicker-popper {
+    transform: translate(0px, 37px) !important;
+}
