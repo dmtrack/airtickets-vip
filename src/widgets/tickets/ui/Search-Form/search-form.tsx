@@ -40,7 +40,7 @@ export const SearchForm = () => {
         dispatch(setTo(cityTo));
         dispatch(setDateFrom(String(dateFrom)));
         dispatch(setDateTo(String(dateTo)));
-        navigate('/avia/info');
+        navigate('/info');
     };
 
     return (

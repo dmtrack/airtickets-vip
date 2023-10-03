@@ -9,9 +9,9 @@ const App = () => {
     return (
         <div className='app'>
             <Routes>
-                <Route path='/avia' element={<HomePage />} />
+                <Route path='/' element={<HomePage />} />
                 <Route
-                    path='/avia/info'
+                    path='/info'
                     element={
                         <React.Suspense fallback={<div>Loading...</div>}>
                             <InfoPage />
