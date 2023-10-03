@@ -110,7 +110,7 @@ export const Input: React.FC<IInputProps> = (props) => {
                 { 'input__container--selected': selectedDatepicker },
                 { 'input__container--focused': focus }
             )}>
-            {datePicker && <IconCalendar />}
+            {datePicker && <Calendar />}
             {datePicker && (
                 <DatePicker
                     onFocus={() => setFocus(true)}
