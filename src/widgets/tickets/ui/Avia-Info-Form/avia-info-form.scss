@@ -1,0 +1,267 @@
+.avia-info {
+    margin-top: 71px;
+    padding-bottom: 100px;
+
+    // .avia-info__item
+    &__item {
+        display: flex;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 0 14px rgba(112, 121, 153, 0.3);
+        border-radius: 15px;
+        @media (max-width: 899.98px) {
+            flex-direction: column;
+        }
+    }
+
+    &__body {
+        width: 100%;
+    }
+
+    // .avia-info__label
+    &__label {
+        padding: 15px 29px 27px 23px;
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        position: relative;
+        flex: 1 1 auto;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+            padding: 30px 29px 27px 23px;
+        }
+    }
+
+    &__label--back {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 87%;
+            position: absolute;
+            border-top: 1px dashed #5c87db;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    // .avia-info__return
+    &__return {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #8ba5d8;
+        border-radius: 15px 0;
+        font-weight: 600;
+        font-size: 12px;
+        color: #fff;
+        padding: 6px 24px;
+        z-index: 2;
+    }
+
+    // .avia-info__company
+    &__company {
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        font-size: 18px;
+        color: #5c5c5c;
+    }
+
+    // .avia-info__baggage
+    &__baggage {
+        margin-left: 20px;
+        flex-shrink: 0;
+    }
+
+    // .avia-info__price
+    &__price {
+        color: #232323;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 118%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #dde3ee;
+        padding: 0 29px 0 29px;
+        min-height: 100%;
+        @media (max-width: 991.98px) {
+            border-top: 1px solid #dde3ee;
+            padding: 30px;
+        }
+    }
+
+    &__button {
+        margin-top: 100px;
+    }
+}
+
+.description {
+    width: 100%;
+
+    // .description__body
+    &__body {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
+    }
+
+    //.description__main-info
+    &__main-info {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media (max-width: 479.98px) {
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    // .description__from
+    &__from {
+        width: 100px;
+        flex-shrink: 0;
+    }
+
+    // .description__row
+    &__row {
+        flex: 0 0 300px;
+        max-width: 300px;
+        @media (max-width: 992.98px) {
+            flex: 0 1 200px;
+            max-width: 200px;
+            width: 100%;
+        }
+        @media (max-width: 479.98px) {
+            flex: 1 1 auto;
+        }
+    }
+
+    // .description__to
+    &__to {
+        @media (min-width: 991.98px) {
+            margin-left: 20px;
+        }
+    }
+
+    // .description__flight-time
+    &__flight-time {
+        text-align: center;
+        margin-top: 8px;
+        color: #b7bac1;
+        line-height: 140%;
+    }
+
+    // .description__time
+    &__time {
+        color: #232323;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 116%;
+        margin-bottom: 8px;
+    }
+
+    // .description__city
+    &__city {
+        font-weight: 500;
+        color: #5c5c5c;
+        line-height: 114%;
+    }
+
+    // .description__date
+    &__date {
+        color: #5c5c5c;
+        line-height: 114%;
+    }
+
+    // .description__airports
+    &__airports {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .description__airport
+    &__airport {
+    }
+
+    // .description__line
+    &__line {
+        border-top: 1px solid #c4c4c4;
+        position: relative;
+        width: 280px;
+        margin: 8px auto 0;
+        @media (max-width: 991.98px) {
+            max-width: 200px;
+            width: 100%;
+            min-width: 100px;
+        }
+
+        &::after {
+            content: '';
+            background-color: #c4c4c4;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: -4px;
+        }
+
+        &::before {
+            content: '';
+            background-color: #c4c4c4;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: -4px;
+        }
+    }
+
+    // .description__buttons
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 24px;
+        flex-wrap: wrap;
+        @media (max-width: 479.98px) {
+            justify-content: center;
+        }
+    }
+
+    // .description__button
+    &__button {
+        background-color: #ffffff;
+        border: 1px solid #b7bac1;
+        border-radius: 10px;
+        padding: 6px 7px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #5c5c5c;
+        line-height: 116%;
+        transition: all 0.3s ease 0s;
+
+        span {
+            font-size: 14px;
+        }
+
+        &.active {
+            border-color: #dde3ee;
+            background-color: #dde3ee;
+            color: #232323;
+            transform: scale(1.2);
+        }
+    }
+}

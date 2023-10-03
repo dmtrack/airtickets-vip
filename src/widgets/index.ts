@@ -1,1 +1,1 @@
-export { SearchForm } from './tickets/ui/SearchForm/Search-Form';
+export { SearchForm } from './tickets/ui/Search-Form/search-form';
