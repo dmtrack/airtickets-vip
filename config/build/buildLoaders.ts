@@ -5,7 +5,7 @@ import { BuildOptions } from './types/config';
 export const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
     const { isDev } = options;
     const cssLoader = {
-        test: /\.s[ac]ss$/i,
+        test: /\.sass|less|css$/i,
         use: [
             // Creates `style` nodes from JS strings
             isDev ? 'style-loader' : MiniCssExtractPlugin.loader,

@@ -1,12 +1,14 @@
 import './input.scss';
+
 import { useCallback, useState } from 'react';
 import clsx from 'clsx';
 import debounce from 'lodash.debounce';
 
-import { useAppDispatch, useAppSelector } from '@/app/providers/redux/hooks';
+import { useAppDispatch, useAppSelector } from '@/entities/tickets/lib/hooks';
 import { setSearchValue } from '@/entities/tickets/lib/ticketSlice';
-import IconCalendar from '../../../app/assets/icons/Calendar';
+import IconCalendar from '@/app/assets/icons/Calendar';
 import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 import cities from '../../lib/cities.json';
 
