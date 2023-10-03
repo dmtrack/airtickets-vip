@@ -1,7 +1,6 @@
 ## Air tickets-VIP
 
 This test-task for the company
-Project is written on typescript, but compiled by webpack at prod mode.
 
 [deploy](https://airtickets-vip.vercel.app)
 
