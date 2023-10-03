@@ -1,0 +1,8 @@
+@import 'reset.scss';
+@import './variables/global.scss';
+
+.app {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
