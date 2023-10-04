@@ -4,7 +4,7 @@ import { S7CompanyIcon } from '@/shared/assets/icons/S7component';
 
 const data: serverTypes = {
     company: 'S7 Airlines',
-    companyImage: S7CompanyIcon,
+    companyImage: <S7CompanyIcon />,
     return: false,
     price: 8300,
     airportFrom: 'SVO',
