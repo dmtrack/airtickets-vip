@@ -1,6 +1,6 @@
 import '@/shared/ui/Input/Input.scss';
 
-import { useCallback, useState } from 'react';
+import { memo, useCallback, useMemo, useState } from 'react';
 import clsx from 'clsx';
 import debounce from 'lodash.debounce';
 
@@ -11,6 +11,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 import cities from '../../lib/cities.json';
+import React from 'react';
 
 interface IInputProps {
     type?: string;
@@ -22,7 +23,7 @@ interface IInputProps {
     onChangeInput: (e: string) => void;
 }
 
-export const Input: React.FC<IInputProps> = (props) => {
+export const Input: React.FC<IInputProps> = memo((props) => {
     const {
         type = 'empty',
         datePicker = false,
@@ -32,7 +33,7 @@ export const Input: React.FC<IInputProps> = (props) => {
         placeholder,
         classes,
     } = props;
-
+    console.log(`render input ${name}`);
     const [startDate, setStartDate] = useState('');
     const [selectedDatepicker, setSelectedDatepicker] = useState(false);
     const [focus, setFocus] = useState(false);
@@ -102,7 +103,6 @@ export const Input: React.FC<IInputProps> = (props) => {
             )
         );
     };
-
     return (
         <div
             className={clsx(
@@ -141,4 +141,4 @@ export const Input: React.FC<IInputProps> = (props) => {
             {!datePicker && renderCities()}
         </div>
     );
-};
+});

@@ -1,8 +1,8 @@
-import { FunctionComponent, SVGProps } from 'react';
+import { FunctionComponent, ReactElement, SVGProps } from 'react';
 
 export type serverTypes = {
     company: string;
-    companyImage: FunctionComponent<SVGProps<SVGSVGElement>>;
+    companyImage: ReactElement;
     return: boolean;
     price: number;
     airportFrom: string;

@@ -20,13 +20,14 @@ export const SearchForm = () => {
     const [cityTo, setCityTo] = useState('');
     const [dateFrom, setStateDateFrom] = useState('');
     const [dateTo, setStateDateTo] = useState('');
-
     const fromInput = (e: string) => {
         setCityFrom(e);
     };
+
     const toInput = (e: string) => {
         setCityTo(e);
     };
+
     const fromDateInput = (e: string) => {
         setStateDateFrom(String(e));
     };
@@ -42,7 +43,6 @@ export const SearchForm = () => {
         dispatch(setDateTo(String(dateTo)));
         navigate('/info');
     };
-
     return (
         <form
             noValidate
@@ -61,7 +61,7 @@ export const SearchForm = () => {
                     onChangeInput={toInput}
                     label='куда'
                     placeholder='Город прилёта'
-                    name='from-city'
+                    name='to-city'
                 />
                 <Input
                     onChangeInput={fromDateInput}
