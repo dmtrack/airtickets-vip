@@ -16,3 +16,4 @@ This test-task for the company
 -   redux-tk
 -   BEM
 -   webpack
+-   feature sliced design
